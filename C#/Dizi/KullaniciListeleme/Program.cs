@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,6 @@ namespace KullaniciListeleme
         {
 
             string[] usernames = new string[10];
-             string[] usernames2 = new string[10];
 
             do
             {
