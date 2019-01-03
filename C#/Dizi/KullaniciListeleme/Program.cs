@@ -13,6 +13,7 @@ namespace KullaniciListeleme
         {
 
             string[] usernames = new string[10];
+             string[] usernames2 = new string[10];
 
             do
             {
