@@ -13,7 +13,6 @@ namespace KullaniciListeleme
         {
 
             string[] usernames = new string[10];
-             string[] usernames2 = new string[10];
 
             do
             {
@@ -44,10 +43,11 @@ namespace KullaniciListeleme
                                 numOfNullUser++;
                             }
                         }
-                        if (numOfNullUser > 0)
+                        do
                         {
-                            do
+                            if (numOfNullUser > 0)
                             {
+
                                 Console.Clear();
                                 Console.WriteLine("---Kullanıcı Ekleme Sayfası---");
                                 Console.Write("Kullanıcı Adı: ");
@@ -58,8 +58,10 @@ namespace KullaniciListeleme
                                     //ilk boş değeri bulur
                                     index = Array.IndexOf(usernames, null);
                                     usernames.SetValue(username, index);
+                                    //usernames[index] = username;
                                     Console.Clear();
                                     Console.WriteLine("Kayıt Başarılı...");
+                                    numOfNullUser--;
                                     Console.WriteLine("Başka Bir Kullanıcı eklemek istiyor musunuz (e/h)");
                                 }
                                 else
@@ -69,17 +71,21 @@ namespace KullaniciListeleme
                                     Console.WriteLine("Tekrar denemek ister misin ? (e/h)");
 
                                 }
-                            } while (Console.ReadLine() == "e");
 
 
-                        }
-                        else
-                        {
-                            Console.Clear();
-                            Console.WriteLine("Rehber Dolu...");
-                            Console.WriteLine("Yönlendiriliyorsunuz...");
-                            Thread.Sleep(2000);
-                        }
+
+
+                            }
+
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("Rehber Dolu...");
+                                Console.WriteLine("Yönlendiriliyorsunuz...");
+                                Thread.Sleep(2000);
+                            }
+
+                        } while (Console.ReadLine() == "e");
                         break;
                     #endregion
 
@@ -103,6 +109,7 @@ namespace KullaniciListeleme
                             else
                             {
                                 index = Array.IndexOf(usernames, username);
+                                //Array.Clear(usernames,index,1);
                                 usernames.SetValue(null, index);
                                 Console.Clear();
                                 Console.WriteLine("Silme Başarılı...");
@@ -155,9 +162,9 @@ namespace KullaniciListeleme
                             Console.WriteLine("Çıkmak istiyormusunuz (e/h)");
                         } while (Console.ReadLine() != "e");
                         #endregion
-
                         break;
                     case 5:
+                        
                         //çıkış
                         Environment.Exit(0);
                         break;
