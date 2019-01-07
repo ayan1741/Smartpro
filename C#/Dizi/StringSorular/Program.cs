@@ -65,6 +65,48 @@ namespace StringSorular
                 }
             }
             #endregion
+
+            #region Orta harfleri yazdıran program
+            {
+                Console.Write("kelime girin:");
+                string kelime1 = Convert.ToString(Console.ReadLine());
+                char[] dizi3 = kelime1.ToCharArray();
+                if (dizi3.Length % 2 == 0)
+                {
+                    Console.WriteLine("karakter:{0}{1}", dizi[dizi3.Length / 2 - 1], dizi3[dizi3.Length / 2]);
+                }
+                else if (dizi3.Length % 2 != 0)
+                {
+                    Console.WriteLine("karakter:{0}", dizi3[dizi3.Length / 2]);
+                }
+            }
+            #endregion
+
+            #region Sesli harfleri Sayan Program
+
+            Console.WriteLine("İçerisindeki sesli harfleri saydırmak istediğiniz cümleyi girin.");
+            string kelime = Console.ReadLine();
+            int sesli = 0;
+            for (int i = 0; i < kelime.Length; i++)
+            {
+                if (kelime[i] == 'a' || kelime[i] == 'e' || kelime[i] == 'i' || kelime[i] == 'ı' || kelime[i] == 'o' || kelime[i] == 'ö' || kelime[i] == 'u' || kelime[i] == 'ü')
+                {
+                    sesli++;
+                }
+            }
+            Console.WriteLine("Girilen cümledeki sesli harf sayısı: " + sesli);
+            #endregion
+
+            #region Sesli Sayan Cozum2
+            {
+                Console.WriteLine("Bir kelime giriniz: ");
+                string kelime4 = "oo";
+                string[] kelimeSay = kelime4.Split('a', 'e', 'ı', 'i', 'u', 'ü', 'o', 'ö', 'A', 'E', 'I', 'İ', 'O', 'Ö', 'U', 'Ü');
+                int sayac = kelimeSay.Length - 1;
+                Console.WriteLine("Metninde sesli sayısı = {0}", sayac);
+                Console.ReadLine();
+            }
+            #endregion
         }
     }
 }
