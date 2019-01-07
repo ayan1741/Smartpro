@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMetodlari", "StringMe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringSorular", "StringSorular\StringSorular.csproj", "{235BDC5B-6645-4330-8544-40F6D63CCFA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailDogrulama", "MailDogrulama\MailDogrulama.csproj", "{8E80B7D7-55E2-4474-99B6-EFC60BA742D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{235BDC5B-6645-4330-8544-40F6D63CCFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{235BDC5B-6645-4330-8544-40F6D63CCFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{235BDC5B-6645-4330-8544-40F6D63CCFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E80B7D7-55E2-4474-99B6-EFC60BA742D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E80B7D7-55E2-4474-99B6-EFC60BA742D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E80B7D7-55E2-4474-99B6-EFC60BA742D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E80B7D7-55E2-4474-99B6-EFC60BA742D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
