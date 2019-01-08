@@ -35,6 +35,7 @@ namespace SortedList_Tanimlama
 
             //GetValueList
             IList liste=sozluk.GetValueList();
+          
             foreach (var item in liste)
             {
                 Console.WriteLine(item);

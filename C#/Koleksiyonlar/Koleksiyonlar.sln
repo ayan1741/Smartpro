@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable_Sorular", "HashTa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedList_Tanimlama", "SortedList_Tanimlama\SortedList_Tanimlama.csproj", "{1347AC38-B408-435A-8EEC-7F902D391D9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack_Tanimlama", "Stack_Tanimlama\Stack_Tanimlama.csproj", "{5F56CC64-BDE5-4776-BE54-525650FE699F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack_Sorular", "Stack_Sorular\Stack_Sorular.csproj", "{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{1347AC38-B408-435A-8EEC-7F902D391D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1347AC38-B408-435A-8EEC-7F902D391D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1347AC38-B408-435A-8EEC-7F902D391D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F56CC64-BDE5-4776-BE54-525650FE699F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F56CC64-BDE5-4776-BE54-525650FE699F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F56CC64-BDE5-4776-BE54-525650FE699F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F56CC64-BDE5-4776-BE54-525650FE699F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
