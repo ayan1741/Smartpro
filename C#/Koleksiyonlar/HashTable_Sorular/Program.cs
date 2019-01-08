@@ -11,7 +11,7 @@ namespace HashTable_Sorular
     {
         static void Main(string[] args)
         {
-            Hashtable sozluk = new Hashtable() {
+            SortedList sozluk = new SortedList() {
                 {"Bugun","Today"},
                 {"Yarin","Tommorrow"},
                 {"Hava","Wheather" },
@@ -23,7 +23,7 @@ namespace HashTable_Sorular
                 {"Kapali","Cloudy" },
             };
             string cumle = "Bugun Hava Çok Bulutlu";
-            var kelimeler = cumle.Split(' ');
+            string [] kelimeler = cumle.Split(' ');
             string ceviri = "";
             
             foreach (string kelime in kelimeler)
@@ -36,7 +36,6 @@ namespace HashTable_Sorular
                         ceviri = ceviri + " " + item.Value;
                         isTranslated = true;
                     }
-                   
                 }
                 if (!isTranslated)
                 {
@@ -44,13 +43,6 @@ namespace HashTable_Sorular
                 }
             }
             Console.WriteLine(ceviri);
-
-
-
-
-
-
-
 
 
 

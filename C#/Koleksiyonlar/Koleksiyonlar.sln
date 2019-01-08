@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable_Tanımlama", "Has
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable_Sorular", "HashTable_Sorular\HashTable_Sorular.csproj", "{49AD7F12-D21C-410D-9B53-B88CF4026CAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedList_Tanimlama", "SortedList_Tanimlama\SortedList_Tanimlama.csproj", "{1347AC38-B408-435A-8EEC-7F902D391D9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{49AD7F12-D21C-410D-9B53-B88CF4026CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49AD7F12-D21C-410D-9B53-B88CF4026CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49AD7F12-D21C-410D-9B53-B88CF4026CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1347AC38-B408-435A-8EEC-7F902D391D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1347AC38-B408-435A-8EEC-7F902D391D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1347AC38-B408-435A-8EEC-7F902D391D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1347AC38-B408-435A-8EEC-7F902D391D9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
