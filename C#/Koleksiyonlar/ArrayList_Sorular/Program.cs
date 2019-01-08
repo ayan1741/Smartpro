@@ -96,6 +96,47 @@ namespace ArrayList_Sorular
             }
             #endregion
 
+            ////longest squence equal numbers (Mükemmel Çözüm)
+            #region MyRegion
+            ArrayList liste = new ArrayList() { 1, 2, 2, 1, 1, 1, 2, 2, 2, 2, 3, 3 };
+
+            ArrayList liste2 = new ArrayList();
+
+            int sayac2 = 0;
+            int sayi = 0;
+            int max2 = 0;
+
+
+            for (int i = 0; i < liste.Count - 1; i++)
+            {
+
+                if ((int)liste[i] == (int)liste[i + 1])
+                {
+                    sayac2++;
+                }
+                else if ((int)liste[i] != (int)liste[i + 1])
+                {
+                    if (sayac2 > max2)
+                    {
+                        max2 = sayac2;
+                        sayi = (int)liste[i];
+                    }
+                    sayac2 = 0;
+                }
+
+            }
+
+
+            for (int k = 0; k <= max2; k++)
+            {
+                liste2.Add(sayi);
+            }
+
+            foreach (var item in liste2)
+            {
+                Console.Write(item);
+            }
+            #endregion
         }
     }
 }
