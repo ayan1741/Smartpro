@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack_Tanimlama", "Stack_Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack_Sorular", "Stack_Sorular\Stack_Sorular.csproj", "{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue_Tanımlama", "Queue_Tanımlama\Queue_Tanımlama.csproj", "{74C193A7-F213-4F9F-9F73-CAEBB386AEF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C577FA2-C9A8-48D5-9AF6-9A0B7437001C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C193A7-F213-4F9F-9F73-CAEBB386AEF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C193A7-F213-4F9F-9F73-CAEBB386AEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C193A7-F213-4F9F-9F73-CAEBB386AEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C193A7-F213-4F9F-9F73-CAEBB386AEF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
