@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DegerDondurenMetodlar", "De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveMethodlar", "RecursiveMethodlar\RecursiveMethodlar.csproj", "{19698BA2-B2A9-4832-9272-B910BAC5016A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parametreSayisiBelliOlmayanMetodlar", "parametreSayisiBelliOlmayanMetodlar\parametreSayisiBelliOlmayanMetodlar.csproj", "{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{19698BA2-B2A9-4832-9272-B910BAC5016A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19698BA2-B2A9-4832-9272-B910BAC5016A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19698BA2-B2A9-4832-9272-B910BAC5016A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

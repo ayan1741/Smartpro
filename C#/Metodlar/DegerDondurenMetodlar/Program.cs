@@ -68,40 +68,7 @@ namespace DegerDondurenMetodlar
             #endregion
 
             //Smith Saysını Bulma
-
-            //int sayi = 4937775;
-            //int sayininRakamlarıToplami = RakmalarıTopla(sayi);
-            //ArrayList list = new ArrayList();
-            ////asal çarpanlarını bulur ve diziye atar
-            //for (int i = 2; i <= sayi; i++)
-            //{
-            //    if (Asalmi(i))
-            //    {
-            //        if (sayi % i == 0)
-            //        {
-            //            list.Add(i);
-            //            sayi = sayi / i;
-            //            i--;
-            //        }
-            //    }
-            //}
-            //int asalRakamlarToplam = 0;
-            //// Listediki sayıları smith sayısı formatına uygun rakamlarını toplar
-            ////12 5 6 78 => 1+2+5+6+7+8 gibi
-            //foreach (var item in list)
-            //{
-            //    if((int)item>9)
-            //    {
-            //        asalRakamlarToplam =asalRakamlarToplam+ RakmalarıTopla((int)item);
-            //    }
-            //    else
-            //    {
-            //        asalRakamlarToplam = asalRakamlarToplam + (int)item;
-            //    }
-            //}
-
-            //Console.WriteLine((asalRakamlarToplam==sayininRakamlarıToplami)?"Smith Sayısıdır":"Smith Sayısı Degildir");
-
+            #region Soru6
             int sayi = 121;
             // 1-sayının rakamları toplamı
             int sayiRakamlariToplam = sayiRakamlariToplami(sayi);
@@ -109,16 +76,24 @@ namespace DegerDondurenMetodlar
             ArrayList liste = AsalListeyiGetir(sayi);
 
             // 2-listenin basamakları toplamı
+            int asalToplam = AsalToplamGetir(liste);
+
+            Console.WriteLine((asalToplam == sayiRakamlariToplam) ? "Smith" : "Smith Degil"); 
+            #endregion
+
+        }
+
+        //soru6
+        static int AsalToplamGetir(ArrayList liste)
+        {
             int asalToplam = 0;
             foreach (var item in liste)
             {
                 asalToplam = asalToplam + sayiRakamlariToplami((int)item);
             }
-
-            Console.WriteLine((asalToplam == sayiRakamlariToplam)?"Smith":"Smith Degil");
-
+            return asalToplam;
         }
-
+        //soru6
         static ArrayList AsalListeyiGetir(int sayi)
         {
             ArrayList liste = new ArrayList();
@@ -136,7 +111,7 @@ namespace DegerDondurenMetodlar
             }
             return liste;
         }
-
+        //soru6
         static int sayiRakamlariToplami(int sayi)
         {
             int toplam = 0;
@@ -149,6 +124,7 @@ namespace DegerDondurenMetodlar
             } while (sayi!=0);
             return toplam;
         }
+        //soru6
         private static bool SayiAsalMi(int sayi)
         {
             bool isPrime = true;
@@ -162,36 +138,6 @@ namespace DegerDondurenMetodlar
             }
             return isPrime;
         }
-
-        //private static bool Asalmi(int sayi)
-        //{
-        //    bool isPrime = true;
-        //    for (int i = 2; i <= sayi / 2; i++)
-        //    {
-        //        if (sayi % i == 0)
-        //        {
-        //            isPrime = false;
-        //            break;
-        //        }
-        //    }
-        //    return isPrime;
-
-        //}
-
-        //soru6
-
-        //soru6
-        //private static int RakmalarıTopla(int sayi)
-        //{
-        //    int toplam = 0;
-        //    do
-        //    {
-        //        int kalan = sayi % 10;
-        //        toplam = toplam + kalan;
-        //        sayi = sayi / 10;
-        //    } while (sayi != 0);
-        //    return toplam;
-        //}
 
         //soru5
         static string YilAyGunAyir(int sayi)
