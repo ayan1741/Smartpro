@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,54 +34,272 @@ namespace DegerDondurenMetodlar
 
             //Klavyeden girilen değerler arasında rastgele sayı üreten ve bu değerleri 10 elemanlı bir dizi içerisine atayan SayiUret( ) isimli bir metot yazınız. Dizinin elemanlarını ekrana yazdıran DiziYazdir( ) isimli bir metot daha yazarak elemanları ekrana yazdırınız. Daha sonra bu dizi içerisindeki en büyük sayı değerini bulan EnBuyuk( ) isimli, en küçük değeri bulan EnKucuk( ) isimli iki metot daha yazınız. EnBuyuk ve EnKucuk metotlarından dönen sayıları ekrana yazdıran programın kodlarını yazınız.
             #region Soru3
-            //Klavyeden random sayı üretmek için deger aralıgı alıyorum 
-            Console.Write("Alt Aralık: ");
-            int alt = int.Parse(Console.ReadLine());
-            Console.Write("Ust Aralık: ");
-            int ust = int.Parse(Console.ReadLine());
+            ////Klavyeden random sayı üretmek için deger aralıgı alıyorum 
+            //Console.Write("Alt Aralık: ");
+            //int alt = int.Parse(Console.ReadLine());
+            //Console.Write("Ust Aralık: ");
+            //int ust = int.Parse(Console.ReadLine());
 
-            int [] dizi=DiziUret(alt,ust);
-            DiziyiYazdir(dizi);
-            int enBuyuk=EnBuyukBul(dizi);
-            int enKucuk = EnKucukBul(dizi);
-            Console.WriteLine();
-            Console.WriteLine(enBuyuk);
-            Console.WriteLine(enKucuk);
+            //int [] dizi=DiziUret(alt,ust);
+            ////ref tipli olduğu için kolanlamak gerekebilir. 
+            ////int[] klon = (int[])dizi.Clone();
+
+            //DiziyiYazdir(dizi);
+            //int enBuyuk=EnBuyukBul(dizi);
+            //int enKucuk = EnKucukBul(dizi);
+            //Console.WriteLine();
+            //Console.WriteLine(enBuyuk);
+            //Console.WriteLine(enKucuk);
 
             #endregion
 
+            //Klavyeden komut satırına girilen metni şifreleyen ve şifreyi çözen programı yazınız.
+            #region Soru4
 
+            //string metin = "wxhdyz";
+            //string sifreliMetin = MetniSifrele(metin);
+            //string sifreCozme = MetinSifreCoz(sifreliMetin);
+            #endregion
+
+            //Parametre olarak gönderilen gün sayısının kaç yıl, kaç ay, kaç gün olduğunu hesaplayan metodu yazınız.
+            #region Soru5
+            //int sayi = 67;
+            //string yilAyGun = YilAyGunAyir(sayi);
+            #endregion
+
+            //Smith Saysını Bulma
+
+            //int sayi = 4937775;
+            //int sayininRakamlarıToplami = RakmalarıTopla(sayi);
+            //ArrayList list = new ArrayList();
+            ////asal çarpanlarını bulur ve diziye atar
+            //for (int i = 2; i <= sayi; i++)
+            //{
+            //    if (Asalmi(i))
+            //    {
+            //        if (sayi % i == 0)
+            //        {
+            //            list.Add(i);
+            //            sayi = sayi / i;
+            //            i--;
+            //        }
+            //    }
+            //}
+            //int asalRakamlarToplam = 0;
+            //// Listediki sayıları smith sayısı formatına uygun rakamlarını toplar
+            ////12 5 6 78 => 1+2+5+6+7+8 gibi
+            //foreach (var item in list)
+            //{
+            //    if((int)item>9)
+            //    {
+            //        asalRakamlarToplam =asalRakamlarToplam+ RakmalarıTopla((int)item);
+            //    }
+            //    else
+            //    {
+            //        asalRakamlarToplam = asalRakamlarToplam + (int)item;
+            //    }
+            //}
+
+            //Console.WriteLine((asalRakamlarToplam==sayininRakamlarıToplami)?"Smith Sayısıdır":"Smith Sayısı Degildir");
+
+            int sayi = 121;
+            // 1-sayının rakamları toplamı
+            int sayiRakamlariToplam = sayiRakamlariToplami(sayi);
+
+            ArrayList liste = AsalListeyiGetir(sayi);
+
+            // 2-listenin basamakları toplamı
+            int asalToplam = 0;
+            foreach (var item in liste)
+            {
+                asalToplam = asalToplam + sayiRakamlariToplami((int)item);
+            }
+
+            Console.WriteLine((asalToplam == sayiRakamlariToplam)?"Smith":"Smith Degil");
 
         }
 
+        static ArrayList AsalListeyiGetir(int sayi)
+        {
+            ArrayList liste = new ArrayList();
+            for (int i = 2; i <= sayi; i++)
+            {
+                if (SayiAsalMi(i))
+                {
+                    if (sayi % i == 0)
+                    {
+                        liste.Add(i);
+                        sayi = sayi / i;
+                        i--;
+                    }
+                }
+            }
+            return liste;
+        }
+
+        static int sayiRakamlariToplami(int sayi)
+        {
+            int toplam = 0;
+
+            do
+            {
+                int kalan = sayi % 10;
+                toplam = toplam + kalan;
+                sayi = sayi / 10;
+            } while (sayi!=0);
+            return toplam;
+        }
+        private static bool SayiAsalMi(int sayi)
+        {
+            bool isPrime = true;
+            for (int i = 2; i <= sayi/2; i++)
+            {
+                if(sayi%i==0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+            return isPrime;
+        }
+
+        //private static bool Asalmi(int sayi)
+        //{
+        //    bool isPrime = true;
+        //    for (int i = 2; i <= sayi / 2; i++)
+        //    {
+        //        if (sayi % i == 0)
+        //        {
+        //            isPrime = false;
+        //            break;
+        //        }
+        //    }
+        //    return isPrime;
+
+        //}
+
+        //soru6
+
+        //soru6
+        //private static int RakmalarıTopla(int sayi)
+        //{
+        //    int toplam = 0;
+        //    do
+        //    {
+        //        int kalan = sayi % 10;
+        //        toplam = toplam + kalan;
+        //        sayi = sayi / 10;
+        //    } while (sayi != 0);
+        //    return toplam;
+        //}
+
+        //soru5
+        static string YilAyGunAyir(int sayi)
+        {
+            int yil = sayi / 365;
+            int ay = (sayi % 365) / 30;
+            int gun = (sayi % 365) % 30;
+            return "" + yil + " yıl " + ay + " ay " + gun + " gün ";
+        }
+
+        //soru4
+        static string MetinSifreCoz(string sifreliMetin)
+        {
+            char[] dizi = sifreliMetin.ToCharArray();
+
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                if (dizi[i].ToString().ToLower() == "a")
+                {
+                    dizi[i] = 'w';
+                }
+                else if (dizi[i].ToString().ToLower() == "b")
+                {
+                    dizi[i] = 'x';
+                }
+                else if (dizi[i].ToString().ToLower() == "c")
+                {
+                    dizi[i] = 'y';
+                }
+                else if (dizi[i].ToString().ToLower() == "d")
+                {
+                    dizi[i] = 'z';
+                }
+                else
+                {
+                    dizi[i] = (char)(dizi[i] - 4);
+                }
+
+            }
+
+            return string.Concat(dizi);
+        }
+
+        //soru4
+        static string MetniSifrele(string metin)
+        {
+            char[] dizi = metin.ToCharArray();
+
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                if (dizi[i].ToString().ToLower() == "w")
+                {
+                    dizi[i] = 'a';
+                }
+                else if (dizi[i].ToString().ToLower() == "x")
+                {
+                    dizi[i] = 'b';
+                }
+                else if (dizi[i].ToString().ToLower() == "y")
+                {
+                    dizi[i] = 'c';
+                }
+                else if (dizi[i].ToString().ToLower() == "z")
+                {
+                    dizi[i] = 'd';
+                }
+                else
+                {
+                    dizi[i] = (char)(dizi[i] + 4);
+                }
+
+            }
+
+            return string.Concat(dizi);
+        }
+
+        //soru3
         static int EnKucukBul(int[] dizi)
         {
             Array.Sort(dizi);
             return dizi[0];
         }
 
-        private static int EnBuyukBul(int[] dizi)
+        //soru3
+        static int EnBuyukBul(int[] dizi)
         {
             Array.Sort(dizi);
             Array.Reverse(dizi);
             return dizi[0];
         }
 
+        //soru3
         static void DiziyiYazdir(int[] dizi)
         {
             foreach (var item in dizi)
             {
-                Console.Write(item+ " ");
+                Console.Write(item + " ");
             }
         }
 
+        //soru3
         static int[] DiziUret(int alt, int ust)
         {
             Random r = new Random();
             int[] dizi = new int[10];
-            for (int i = 0; i <dizi.Length ; i++)
+            for (int i = 0; i < dizi.Length; i++)
             {
-                dizi[i] = r.Next(alt, ust); 
+                dizi[i] = r.Next(alt, ust);
             }
             return dizi;
         }
@@ -91,7 +310,7 @@ namespace DegerDondurenMetodlar
             if (sayi > 1)
             {
                 bool isPrime = true;
-                for (int i = 2; i <= sayi/2; i++)
+                for (int i = 2; i <= sayi / 2; i++)
                 {
                     if (sayi % i == 0)
                     {
@@ -108,7 +327,7 @@ namespace DegerDondurenMetodlar
         }
 
         //soru1
-        static int Topla(int sayi1 , int sayi2)
+        static int Topla(int sayi1, int sayi2)
         {
             int toplam = sayi1 + sayi2;
             return toplam;
