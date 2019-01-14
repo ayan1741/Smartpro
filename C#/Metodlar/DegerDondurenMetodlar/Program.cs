@@ -81,6 +81,8 @@ namespace DegerDondurenMetodlar
             Console.WriteLine((asalToplam == sayiRakamlariToplam) ? "Smith" : "Smith Degil"); 
             #endregion
 
+          
+
         }
 
         //soru6
@@ -138,6 +140,8 @@ namespace DegerDondurenMetodlar
             }
             return isPrime;
         }
+
+        
 
         //soru5
         static string YilAyGunAyir(int sayi)

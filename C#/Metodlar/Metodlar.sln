@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveMethodlar", "Recur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parametreSayisiBelliOlmayanMetodlar", "parametreSayisiBelliOlmayanMetodlar\parametreSayisiBelliOlmayanMetodlar.csproj", "{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpsiyonelParametreliMetodlar", "OpsiyonelParametreliMetodlar\OpsiyonelParametreliMetodlar.csproj", "{0F8E5D64-47A9-4759-9F53-F151F7135AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodOverLoad", "MetodOverLoad\MetodOverLoad.csproj", "{6A8B73F5-26BF-44C7-8425-5966FCA913CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FB93DDB-256D-4F56-A987-0A7DEEC5C79E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8E5D64-47A9-4759-9F53-F151F7135AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8E5D64-47A9-4759-9F53-F151F7135AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8E5D64-47A9-4759-9F53-F151F7135AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8E5D64-47A9-4759-9F53-F151F7135AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A8B73F5-26BF-44C7-8425-5966FCA913CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8B73F5-26BF-44C7-8425-5966FCA913CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8B73F5-26BF-44C7-8425-5966FCA913CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A8B73F5-26BF-44C7-8425-5966FCA913CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
